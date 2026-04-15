@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Як комунікувати з військовими</title>
+    
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta name="theme-color" content="#ffffff"> 
+</head>
+<body>
+
+  
+<!-- Приховане сховище іконки -->
+<svg style="display: none;">
+<!-- LINK -->
+<symbol id="icon-link" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+            <path d="M423.7,349.1c-161.3-38.1-303.3,18.9-347.3,118c-2.1,4.7-31,72.7-1.1,142.5 c43.3,101.1,190.4,160.1,359.5,121.3"/>
+            <path d="M656.3,349.1c161.3-38.1,303.3,18.9,347.3,118c2.1,4.7,31,72.7,1.1,142.5c-43.3,101.1-190.4,160.1-359.5,121.3"/>
+            <path d="M364.4,547.7c115.8-1,231.5-2,347.3-3"/>
+        </g>
+</symbol>
+<!-- POPUP -->
+<symbol id="icon-popup" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+        <path class="st0" d="M600.3,299.5c-147.7,4.1-295.5,8.2-443.2,12.3c2,198.8,4.1,397.6,6.1,596.4c215.1,1.4,430.3,2.7,645.4,4.1
+	c4.1-141.6,8.2-283.2,12.3-424.9"/>
+<path class="st0" d="M748.9,177.2c58-3.2,116-6.3,174-9.5c-7.8,56.6-15.6,113.1-23.4,169.7"/>
+<path class="st0" d="M466.3,638.1c129.7-138.2,259.4-276.3,389-414.5"/>
+        </g>
+</symbol>
+<!-- NAV -->
+<symbol id="icon-nav" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+<path class="st0" d="M932.1,673.4c-12.8,56.7-25.6,113.3-38.3,170c-52.3-22.9-104.6-45.8-156.9-68.8"/>
+	<path class="st0" d="M147.9,673.8c-0.2-36,0.7-373.1,147.1-428.9c134.7-51.4,384.3,138.4,563.4,518.2"/>
+        </g>
+</symbol>
+<!-- DOCUMENT -->
+<symbol id="icon-document" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+
+   <path class="st0" d="M336.5,550.9c51,0,101.9,0,152.9,0"/>
+	<path class="st0" d="M336.5,682c104.4,0.6,208.9,1.1,313.3,1.7"/>
+	<path class="st0" d="M336.5,814.8c77.4,0,154.8,0,232.2,0"/>
+	<path class="st0" d="M891.2,392.3c-94.3-1.7-188.6-3.4-282.8-5.2c0-77,0-154.1,0-231.1"/>
+	<path class="st0" d="M924,954.5c-0.8-195.1-1.5-390.1-2.3-585.2c-101-80.9-202-161.7-302.9-242.6c-152.7-0.4-305.4-0.8-458.2-1.1
+		c-1.5,275.2-3.1,550.3-4.6,825.5C412,952.2,668,953.3,924,954.5z"/>
+        </g>
+</symbol>
+<!-- INFO -->
+<symbol id="icon-info" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+
+	<path class="st0" d="M533.6,809.5c10.9-110.3,21.8-220.6,32.7-330.9"/>
+	<path class="st0" d="M113.1,667.2c-47.8-144.4,7.2-307.6,99.7-413.5C333.3,115.8,533.8,56,706.9,118.3
+		c146,52.6,217.9,172.5,243.3,223.2c87.8,175.3,69.6,422-74.5,549.4C655.6,1085.4,205.2,945.2,113.1,667.2z"/>
+	<path class="st0" d="M571.2,337c0.3,10,10.1,19.7,20.3,17.7c8.6-1.7,14.4-11.2,13-19.8c-1.7-10.7-14.1-17.7-23.4-14.1
+		C574.7,323.4,571,330.5,571.2,337z"/>
+        </g>
+</symbol>
+<!-- COPY -->
+<symbol id="icon-copy" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+
+<path class="st0" d="M241.5,695.4c42.1,31.5,84.1,63,126.2,94.6c88-82.1,175.9-164.1,263.9-246.2"/>
+<g>
+	<path class="st0" d="M110.2,927.9c1-187.5,1.9-375,2.9-562.5c217.6,1.9,435.3,3.9,652.9,5.8c1,186.5,1.9,373.1,2.9,559.6
+		C549.3,929.8,329.8,928.8,110.2,927.9z"/>
+	<path class="st0" d="M766,371.2c0.6,113,1.2,226,1.8,338.9c70.8,0.3,141.7,0.6,212.5,0.9c-1-186.5-1.9-373.1-2.9-559.6
+		c-217.6-1.9-435.3-3.9-652.9-5.8c-0.4,73.9-0.8,147.7-1.1,221.6C470.9,368.5,618.5,369.8,766,371.2z"/>
+</g>
+        </g>
+</symbol>
+<!-- CLOSE -->
+<symbol id="icon-close" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+
+    <path class="st0" d="M202.5,264.6c97.7,76.8,198.4,160.6,300.9,251.6c125.4,111.4,239.6,221.5,343.4,328.1"/>
+	<path class="st0" d="M877.5,235.7C768.1,381.3,630.7,538.7,459.2,693c-59.7,53.7-118.9,102.9-176.8,147.9"/>
+        </g>
+</symbol>
+<!-- LIST -->
+<symbol id="icon-list" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+
+	<path d="M491.1,807L273,588.9c-27-27-27-70.7,0-97.7L491.1,273c27-27,70.7-27,97.7,0L807,491.1c27,27,27,70.7,0,97.7L588.9,807
+		C561.9,834,518.1,834,491.1,807z"/>
+
+        </g>
+</symbol>
+<!-- ARROW -->
+<symbol id="icon-arrow" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+<path class="st0" d="M573.1,323.1L928.2,668c35,34,11.4,93.4-37.4,94.1c-233.3,3.4-466.6,6.8-699.9,10.2c-48.8,0.7-74.2-58-40.1-93
+	l344.8-355.1C516.7,302.6,551.4,302,573.1,323.1z"/>
+        </g>
+</symbol>
+<!-- DOWNLOAD -->
+<symbol id="icon-download" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+
+    <path class="st0" d="M138.6,871.3c267.6-0.6,535.2-1.2,802.8-1.8"/>
+	<path class="st0" d="M553.3,208.7c-2,154.6-4.1,309.1-6.1,463.7"/>
+	<path class="st0" d="M364.9,576.1c58.2,62.8,116.4,125.6,174.6,188.4c62.3-58.7,124.6-117.4,186.9-176.2"/>
+        </g>
+</symbol>
+<!-- SHARE -->
+<symbol id="icon-share" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+
+<path class="st0" d="M425.5,384.3c-68.1,1.9-136.2,3.9-204.3,5.8c-3.2,186.8-6.5,373.6-9.7,560.3c225,1.9,450.1,3.9,675.1,5.8
+		c3.2-191.3,6.5-382.6,9.7-574c-71.3,0-142.7,0-214,0"/>
+	<path class="st0" d="M562.1,198.5c-2,128.7-4.1,257.4-6.1,386"/>
+	<path class="st0" d="M466.1,213.6c30.6-32.7,61.3-65.4,91.9-98c36.8,34.7,73.5,69.4,110.3,104.2"/>
+        </g>
+</symbol>
+
+<!-- EMAIL -->
+<symbol id="icon-email" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+
+	<path class="st0" d="M922.9,848.2H157.1c-49.2,0-89-39.9-89-89V320.8c0-49.2,39.9-89,89-89h765.8c49.2,0,89,39.9,89,89v438.5
+		C1011.9,808.4,972.1,848.2,922.9,848.2z"/>
+	<path class="st0" d="M553.1,664.2c-28.3,0.4-77.4-4.8-206.7-97.3c-72.7-52-171.1-131.9-278.4-251c0-5.6,0.4-35.4,19.1-59.5
+		c11.8-15.2,28.1-24.6,46-24.6h813.7c36,0,65.1,37.7,65.1,84.2C925,417.5,845,489.2,784.9,537.6
+		C680.9,621.4,627.4,663.3,553.1,664.2z"/>
+	<path class="st0" d="M327.3,580.6C266.6,650.4,205.9,720.2,145.1,790"/>
+	<path class="st0" d="M752.7,578.2c68.8,70.6,137.6,141.2,206.4,211.8"/>
+        </g>
+</symbol>
+
+<!-- Circle -->
+<symbol id="icon-circle" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+<path class="st0" d="M526.4,275.4c-16.6,0.1-159,2.9-230.3,108.4c-83.5,123.5-27.2,325,118.5,396.3
+	c117.7,57.6,263.3,15.3,342.1-81.3c7.4-9.1,106.4-134.6,47.4-271C760.2,326.2,647.8,262.8,526.4,275.4z"/>
+
+        </g>
+</symbol>
+
+<!-- flag -->
+<symbol id="icon-flag" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+<path class="st0" d="M844.9,176c-0.4,242.6-0.9,485.3-1.3,727.9"/>
+	<path class="st0" d="M827.7,189.3c-197.5,76.2-395,152.4-592.5,228.6C433.7,496.7,632.3,575.5,831,654.3"/>
+        </g>
+</symbol>
+
+
+<!-- psychologist -->
+<symbol id="icon-psychologist" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+
+<path class="st0" d="M797.4,850.7C814.5,833.3,912,730.9,902.6,581C891.3,400.5,734.9,308,708.4,292.3
+	c-11.2-6.6-236.2-134.9-407.3-5.4c-75.9,57.5-138.6,163.7-121.4,283.2c17.2,119.5,110.6,227.7,234.7,248.2
+	c99.8,16.5,232.3-21.9,277.8-126.8c25-57.5,22.7-132.2-16.2-191.5c-39.6-60.4-116.5-103.9-191.5-89c-15,3-98.2,21.9-110.6,89
+	c-8.1,43.9,16,98.1,64.7,116c34.9,12.8,75.3,4.4,105.2-21.6"/>
+        </g>
+</symbol>
+<!-- hr -->
+<symbol id="icon-hr" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+
+	<path class="st0" d="M361.4,147.5c-88.6,16.1-161.3,86.1-187.5,173.2c-30.9,102.8,7.6,214.2,87.3,278.4
+		c77.2,62.2,185.2,73.7,272.7,26.3c6.4-3.4,126.5-71.3,132.1-208.3c5.2-128.1-94.4-204.8-121.4-223.6
+		C525.3,180.1,454.2,130.6,361.4,147.5z"/>
+	<path class="st0" d="M892.3,911.4c5.9-7.5,24.1-32.4,24.4-68.9c0.2-23-6.7-40.7-11.1-49.9C850.8,737.1,796,681.6,741.2,626.2
+		c-40,40.4-80,80.8-120,121.2c53.3,56.3,106.7,112.5,160,168.8c5,4.1,30,24,64.4,19C870.3,931.6,886.4,917.3,892.3,911.4z"/>
+	<path class="st0" d="M581.4,593.9c28.7,27.7,57.3,55.5,86,83.2"/>
+
+        </g>
+</symbol>
+
+<!-- favbet -->
+<symbol id="icon-favbet" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+
+<path class="st0" d="M539.4,415.3c-32-2.7-31.1-55.5-79.4-89.7c-72.2-51.1-167.4,1.4-172.1,4.1c-13.9,8-91.4,54.6-104.4,139.3
+	c-17.7,116,98.4,218.4,209.9,316.8c59.3,52.3,89.9,78.5,137.3,83.7c81.4,8.8,144.6-50.9,210.8-113.6
+	c88.3-83.6,162.5-153.8,156.2-254c-5-79.2-58.5-144.8-111.5-176.4c-16.1-9.6-74.4-42.8-131.7-17.9
+	C588.5,336.5,579.5,418.6,539.4,415.3z"/>
+        </g>
+</symbol>
+
+<!-- warning -->
+<symbol id="icon-warning" viewBox="0 0 1080 1080">
+        <g fill="none" stroke="currentColor" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+
+<path class="st0" d="M522.5,225.7C398.2,435.2,274,644.8,149.7,854.3c260.2-0.4,520.3-0.9,780.5-1.3
+		C794.3,643.9,658.4,434.8,522.5,225.7z"/>
+	<path class="st0" d="M525.6,463.4c-0.1,60.5-0.2,120.9-0.3,181.4"/>
+	<path class="st0" d="M526.5,737.6c0.2,0,0.4-0.1,0.7-0.1"/>
+        </g>
+</symbol>
+
+
+
+
+
+</svg>
+  <div class="wrapper">
+
+
+<!-- ................................................................................................................................. -->
+  <header>
+    <section class="block-100">
+      <img src="asset/img/ukrpravd.svg" alt="Українська Правда" class="logo-ukrpravd">
+      
+       <h1>
+        <span class="span-warning">
+          <svg class="svg-icon icon-link-left"><use href="#icon-warning"></use></svg>
+          Забудьте про жалість
+          
+        </span>
+        <span class="h1_main">Як комунікувати з військовими</span>
+        <span class="h1_main">в побуті, сім'ї та на роботі</span>
+      </h1>
+
+     <img src="asset/img/logo.svg" alt="Як комунікувати з військовими" style="max-width: 500px; width: 100%;">
+    </section>
+    
+  </header>
+<!-- ................................................................................................................................. -->
+ <main>
+
+<!-- ................................................................................................................................. -->
+    <div class="section-wrapper" id="bg-0">
+       
+      <section class="block">
+        
+      <p>
+        Цивільні та військові перебувають ніби у двох різних реальностях, тому нерідко їм складно знайти спільну мову.
+      </p>
+      <p>
+        Бійці, які приїжджають додому в короткі відпустки або вертаються після поранень,
+         часто стикаються з дивною комунікацією, стигматизацією травм та некоректними питаннями.
+      </p>
+      <p>
+        Психологи зазначають, що <strong>деструктивна комунікація може призвести до самоізоляції</strong> військових: 
+      </p>
+        <ul>
+          <li>
+           
+            <p>
+               <svg class="svg-icon"><use href="#icon-list"></use></svg>
+              вони уникатимуть розмов з близькими чи друзями,
+            </p>
+          </li>
+          <li>
+            
+            <p>
+              <svg class="svg-icon"><use href="#icon-list"></use></svg>
+              менше прагнутимуть опинитись в соціумі.
+            </p>
+          </li>
+        </ul>
+      
+      <p><strong>Як коректно говорити з військовими, пояснили:</strong></p>
+         <ul>
+           <li>
+             <p class="p-psychologist">
+              <svg class="svg-icon"><use href="#icon-psychologist"></use></svg>
+              Психолог Роман Зіненко
+            </p>
+           </li>
+           <li>
+             <p class="p-hr">
+              <svg class="svg-icon"><use href="#icon-hr"></use></svg>
+              HR-керівник Сергій Кошиль
+            </p>
+           </li>
+           <li>
+             <p class="p-favbet">
+              <svg class="svg-icon"><use href="#icon-favbet"></use></svg>
+              Кураторка благодійного фонду Favbet Foundation Маріанна Ковеня
+            </p>
+           </li>
+         </ul>
+          
+     </section>
+    </div>
+
+     <section class="block-100">
+             
+             
+            <article> 
+              <a class="favbet" href="https://favbet.foundation/" target="_blank">
+                  <img src="asset/img/favbet-logo.svg" alt="Favbet Foundation" class="logo-favbet">
+                  <span class="span-small">Матеріал виходить за підтримки</span>
+                <span>
+                  Благодійного фонду Favbet Foundation
+                </span>
+                 </a> 
+             </article>    
+
+     </section>
+<!-- ................................................................................................................................. -->
+ <div class="section-wrapper" id="bg-1">
+ 
+    <h2 class="text-position-center">Не ставте дурних питань та не “витягуйте” відповіді</h2>
+    <section class="block">
+  
+    <p>
+      <svg class="svg-icon"><use href="#icon-psychologist"></use></svg>
+      <strong>Психолог Роман Зіненко не радить ставити питання про службу:</strong>
+    </p>
+       <ul>
+         <li>
+           <p>
+            <svg class="svg-icon span-danger"><use href="#icon-flag"></use></svg>
+            “А як там було? Що робив?”
+          </p>
+         </li>
+         <li>
+           <p>обов'язки чи побратимів </p>
+         </li>
+         <li>
+           <p>
+            <svg class="svg-icon span-danger"><use href="#icon-flag"></use></svg>
+            “Скільки людей вбив?”
+          </p>
+         </li>
+         <li>
+           <p>
+            <svg class="svg-icon span-danger"><use href="#icon-flag"></use></svg>
+            “А як там наші?”, тощо.
+          </p>
+         </li>
+       </ul>
+      
+    <blockquote class="quote-psychologist">
+   
+        <p>
+          “На війні є по суті одна мета – вижити.
+           Тому часто психіка і тіло кидає всі зусилля на це.
+            А зв'язок із зовнішнім світом – тьмяніє.
+             До стресових ситуацій додається втома, особисті переживання, пригнічені емоції тощо.
+              Це все в комплексі впливає на те, що говорить військовий та як він це робить”, – зазначає він.
+            </p>
+        <figcaption><cite class="cite-psychologist">Роман Зіненко</cite></figcaption>
+    </blockquote>
+    <p>
+      Фахівець нагадує, що військові  виконують  накази,  бойові  завдання, ліквідують ворога, захищають всю країну від нападу.
+       Тому рефлексії чи спогади для них поки не на часі. Крім того, деякі теми можуть бути для них важкими.
+      </p>
+    <blockquote class="quote-psychologist">
+      <p>
+        “Військовослужбовці відвикають від цивільного життя, бо мають на війні іншу реальність.
+         Тому комунікація в побуті дуже залежить від ступеня довіри у стосунках. 
+         Людина сама розповість про те, що вважатиме за потрібне, коли прийде час”
+        </p>
+        <figcaption><cite class="cite-psychologist">Роман Зіненко</cite></figcaption>
+    </blockquote>
+    <p>
+      Він зауважує, що військові в побуті можуть лишатися напруженими та тримати ситуацію під контролем.
+       Однак не варто поспішати з рекомендаціями щодо розслаблення або “відпускання” ситуації.
+      </p>
+    <blockquote class="quote-psychologist">
+      <p>
+        “Кожен військовослужбовець може повернутись до нормального життя в індивідуальні терміни.
+         Однак дуже багато залежить від його психоемоційного стану”
+        </p>
+        <figcaption><cite class="cite-psychologist">Роман Зіненко</cite></figcaption>
+    </blockquote>
+  </section>
+ </div>
+
+<!-- ................................................................................................................................. -->
+ <div class="section-wrapper" id="bg-2">
+    <h2 class="text-position-center">4 Правила спілкування вдома</h2>
+  <section class="block">
+  
+    <article class="list-wrapper">
+            <ol class="continuous-list">
+      <li>
+        <p><span></span>
+          Прийняти думку і пояснити дітям (за потреби), що чоловік не такий, як був.
+          Його треба вивчити, його вподобання можуть змінитись, комунікація, режим сну тощо.
+        </p>
+      </li>
+      <li>
+        <p><span></span>
+          Якщо є короткочасні спалахи агресії – варто відступити й дати людині простір.
+
+        </p>
+      </li>
+    </ol>
+    <blockquote class="quote-psychologist">
+      <p>
+        “Військовий може реагувати гостріше на певні моменти. Однак не треба поспішати “вести” йому допомогу та “робити добро”
+        </p>
+        <figcaption><cite class="cite-psychologist">Роман Зіненко</cite></figcaption>
+    </blockquote>
+    <ol class="continuous-list">
+      <li>
+        <p><span></span>
+          Не робити різких рухів, не будити та попереджувати про “вторгнення” в їхній простір 
+          (наприклад, коли заходите в кімнату).
+        </p>
+
+      </li>
+      <li>
+        <p><span></span>
+          Залучати до звичайних процесів виключно за бажанням.
+        </p>
+      </li>
+    </ol>
+    </article>
+
+    <blockquote class="quote-psychologist">
+      <p>
+        “Якщо людина приїхала додому у відпустку, то варто дати право вирішувати, чи хоче вона робити щось в побуті,
+         чи прагне навпаки – сну, тиші та розуміння”
+        </p>
+        <figcaption><cite class="cite-psychologist">Роман Зіненко</cite></figcaption>
+    </blockquote>
+    <p>
+      Він радить говорити про побутові речі та радіти тому, що ця людина зараз поруч.
+    </p>
+  </section>
+  </div>
+<!-- ................................................................................................................................. -->
+  <div class="section-wrapper" id="bg-3">
+     <h2 class="text-position-center">Проявляйте емпатію, а не співчуття</h2>
+  <section class="block">
+   
+
+    <p>
+      <strong>Психолог наголошує:</strong>
+       не можна жаліти військового, а також вживати фрази на кшталт:
+       <ul>
+         <li><p>
+          <svg class="svg-icon span-danger"><use href="#icon-flag"></use></svg>
+          “Я тебе розумію”
+        </p></li>
+         <li><p>
+          <svg class="svg-icon span-danger"><use href="#icon-flag"></use></svg>
+          “Все буде добре”
+         </p></li>
+         <li><p>
+          <svg class="svg-icon span-danger"><use href="#icon-flag"></use></svg>
+          “Ти – мій герой”
+        </p></li>
+       </ul>
+      </p>
+
+    <p>
+      <strong>У розмові краще використовувати:</strong> 
+      <ul>
+        <li>
+          <p>
+          <svg class="svg-icon span-success"><use href="#icon-circle"></use></svg>
+          “Я тобою пишаюсь”
+        </p>
+      </li>
+        <li>
+          <p>
+          <svg class="svg-icon span-success"><use href="#icon-circle"></use></svg>
+          “Я зараз можу це робити, тому що ти мене захищаєш”
+        </p>
+      </li>
+        <li>
+          <p>
+          <svg class="svg-icon span-success"><use href="#icon-circle"></use></svg>
+          “Ти мій захисник”
+        </p>
+      </li>
+      </ul>
+    </p>
+    <blockquote class="quote-psychologist">
+      <p>
+        “На вулиці можна підійти до військового: 
+        без різких рухів, привітатися та висловити подяку за те, що він робить. 
+        Але варто узагальнити, адже насправді ви не знаєте про цю людину рівно нічого – ані про досвід, ані про обов'язки тощо”
+        </p>
+        <figcaption><cite class="cite-psychologist">Роман Зіненко</cite></figcaption>
+    </blockquote>
+    <p>
+      <strong>Поради щодо спілкування з військовими:</strong>
+    </p>
+    <ul>
+      <li>
+        <p>
+          <svg class="svg-icon span-success"><use href="#icon-circle"></use></svg>
+          Дайте людині висловитись.
+        </p>
+      </li>
+      <li>
+        <p>
+          <svg class="svg-icon span-success"><use href="#icon-circle"></use></svg>
+          Не робіть нічого непередбачуваного.
+        </p>
+
+      </li>
+      <li>
+        <p>
+          <svg class="svg-icon span-success"><use href="#icon-circle"></use></svg>
+          Жодної критики, порад та ярликів.
+        </p>
+
+      </li>
+    </ul>
+    <p>Також психолог зазначає, що не треба допомагати людям без їхнього дозволу чи прохання.</p>
+    <blockquote class="quote-psychologist">
+      <p>
+        “Взагалі треба викинути з голови упередження, що військовий – це якась інша людина, яка потребує іншого ставлення або допомоги. 
+        Навіть бійці після поранення – це люди. 
+        І кожен має право звернутись за допомогою або робити щось самотужки”
+      </p>
+        <figcaption><cite class="cite-psychologist">Роман Зіненко</cite></figcaption>
+    </blockquote>
+    <p>
+      Він додає, що це стосується й бійців після поранення, з ампутованими кінцівками, опіками тощо. 
+      При контакті з такими військовими перш за все варто підтримувати зоровий контакт, але не витріщатись, 
+      бо уникнення погляду можуть розцінити як страх чи жалість.
+    </p>
+  </section>
+  </div>
+<!-- ................................................................................................................................. -->
+   <div class="section-wrapper" id="bg-4">
+    <h2 class="text-position-center">Що варто враховувати роботодавцям</h2>
+    <section class="block">
+    
+    <blockquote class="quote-hr">
+      <p>
+        “Демобілізовані військові – такі ж рівноправні учасники ринку праці, як і решта кандидатів. 
+        Питання поділу цих категорій не повинно бути в принципі. 
+        Різниця може бути лише в тому, що за час служби кандидат міг частково втратити навички роботи, до чого роботодавцю 
+        необхідно підходити з розумінням і давати час на адаптацію”
+      </p>
+        <figcaption><cite class="cite-hr">Сергій Кошиль</cite></figcaption>
+    </blockquote>
+    <p>
+      Він додає, що військові мають дуже цінні персональні якості, наприклад, командна робота, орієнтація на результат та дисципліна.
+
+    </p>
+    <p>
+       <svg class="svg-icon"><use href="#icon-hr"></use></svg>
+      Під час співбесіди Сергій Кошиль радить уникати питань, які пов'язані з військовою службою, адже вони можуть бути недоречними.
+    </p>
+    <blockquote class="quote-hr">
+      <p>
+        “Також не можна використовувати питання, які можуть навіть побічно натякати на припущення про те,
+         що війна могла вплинути на фізичний чи психологічний стан кандидата, адже це один з елементів дискримінації”
+        </p>
+        <figcaption><cite class="cite-hr">Сергій Кошиль</cite></figcaption>
+    </blockquote>
+    <p>
+      Фахівець наголошує на потребі створення рівних умов для всіх працівників компанії. 
+      Оскільки надмірна увага може розцінюватися як опіка та створювати незручності для колишнього військового й інших співробітників.
+    </p>
+
+
+
+  </section>
+</div>
+ <div class="section-wrapper" id="bg-5">
+  <section class="block">
+    <p>
+      <svg class="svg-icon"><use href="#icon-favbet"></use></svg>
+      Кураторка благодійного фонду Favbet Foundation Маріанна Ковеня переконана, 
+      що більшість бійців, які зараз змушені демобілізуватись, не будуть сидіти осторонь. 
+      Але їхній життєвій та військовий досвід є дуже цінним, зокрема для благодійних фондів, які займаються допомогою бійцям.
+    </p>
+    <blockquote class="quote-favbet">
+      <p>
+        “Безумовно, психологічна і фізична реабілітація важливі передусім. 
+        Але після відновлення робота й вміння себе знайти – це основа подальшого здорового життя наших військових. 
+        Глобально, працевлаштування військових людей в благодійні фонди, які займаються підтримкою ЗСУ, – ще один спосіб наблизити перемогу”
+        </p>
+        <figcaption><cite class="cite-favbet">Маріанна Ковеня</cite></figcaption>
+    </blockquote>
+
+    <p>
+      Всього за час війни за підтримки фонду 
+            <a  href="https://favbet.foundation/" target="_blank">
+        <svg class="svg-icon icon-link-left"><use href="#icon-link"></use></svg>
+        Favbet Foundation 
+        </a>
+      
+      
+      українська армія отримала понад
+      <span class="span-good"> 220 авто</span> 
+      та більше ніж
+      <span class="span-good"> 115 дронів</span>.
+
+    </p>
+    <p>
+      Проте головним донором благодійного фонду 
+
+        Favbet Foundation
+
+       
+      є провідна українська iGaming-компанія. 
+      Ця компанія також допомагає військовим на фронті. Наприклад, у межах проєкту <span>“Армія дронів”</span> 
+      саме ця компанія придбала нові
+      <span class="span-good"> 53 пікапи</span> 
+      та 
+      <span class="span-good">40 безпілотників</span>
+      , які сьогодні допомагають бійцям нищити ворога на передовій.
+    </p>
+</section>
+</div>
+<!-- ................................................................................................................................. -->
+ </main>
+  
+<!-- ................................................................................................................................. -->
+ <footer>
+  <img class="dron" src="asset/img/dron.svg" alt="Дрон">
+  <img class="car" src="asset/img/car.svg" alt="Пікап">
+ </footer>
+<!-- ................................................................................................................................. -->
+  </div>
+
+</body>
+</html>
