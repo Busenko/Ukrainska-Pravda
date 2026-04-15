@@ -174,7 +174,7 @@ body::-webkit-scrollbar-thumb {
 }
 .block-100{
     width: 100%;
-    gap: 2rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,12 +190,10 @@ header{
     padding: 1rem;;
   
     
-    
-   
 background: linear-gradient(to bottom,  rgba(126,0,25,1) 0%,rgba(255,255,255,1) 100%);
 
 }
-
+.logo-img{ max-width: 500px; width: 100%; height: auto;}
 
 /* ................................................................................................................................... */
 
@@ -588,13 +586,13 @@ h2{font-size: 2.4rem; font-weight: 800; margin-bottom: 2rem;}
 @media (max-width: 740px) {
 
 .block{ width: 100%; padding: 0rem 1rem; min-width: auto; }
-.block-100{ width: 100%; gap: 2rem;}
+.block-100{ width: 100%;}
 
 /* ................................................................................................................................. */
 
 header{ width: 100%;padding: 1rem;}
 
-
+.logo-img{ max-width: 400px; width: 100%; height: auto;}
 
 main{ gap: 2rem;}
 /* ................................................................................................................................... */
